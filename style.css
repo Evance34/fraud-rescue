@@ -1,0 +1,9 @@
+
+body{font-family:'Segoe UI',sans-serif;background:#f0f2f5;margin:0;}
+.header{background:#0a3d62;padding:20px;color:white;text-align:center;}
+.container{max-width:900px;margin:auto;padding:20px;}
+.card{background:white;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);} 
+input,select,textarea{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ccc;}
+button{background:#0a3d62;color:white;padding:12px 18px;border:none;border-radius:8px;cursor:pointer;font-size:16px;}
+table{width:100%;border-collapse:collapse;} th,td{border-bottom:1px solid #ddd;padding:10px;}
+nav a{color:white;margin:0 10px;text-decoration:none;}

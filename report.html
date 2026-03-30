@@ -1,0 +1,13 @@
+
+<!DOCTYPE html><html><head><link rel='stylesheet' href='/static/css/style.css'><title>Report Scam</title></head>
+<body><div class='header'><h1>Report a Scam</h1></div>
+<div class='container'><form class='card' action='/submit' method='POST' enctype='multipart/form-data'>
+<input name='name' placeholder='Full Name' required>
+<input name='email' placeholder='Email' required>
+<input name='phone' placeholder='Phone' required>
+<select name='type'>
+<option>Investment</option><option>Crypto</option><option>Romance</option><option>Real Estate</option><option>Other</option></select>
+<textarea name='desc' placeholder='Describe the scam' required></textarea>
+<label>Upload Proof</label><input type='file' name='file'>
+<button>Submit Report</button>
+</form></div></body></html>
