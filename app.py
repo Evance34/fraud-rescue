@@ -19,13 +19,15 @@ def submit():
     # Gmail email ready
     msg=MIMEText(f"New scam report from {d['name']} ({d['email']})")
     msg['Subject']='New Scam Report'
-    msg['From']='YOUR_GMAIL@gmail.com'
-    msg['To']='YOUR_GMAIL@gmail.com'
-    # Uncomment to enable Gmail
-    #context=ssl.create_default_context()
-    #with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as s:
-    #    s.login('YOUR_GMAIL@gmail.com','YOUR_APP_PASSWORD')
-    #    s.send_message(msg)
+    import os
+
+msg['From'] = os.getenv("GMAIL_USER")
+msg['To'] = os.getenv("GMAIL_USER")
+
+context = ssl.create_default_context()
+with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as s:
+    s.login(os.getenv("thegrowthn@gmail.com"), os.getenv("oiik feqk ywyt klcl"))
+    s.send_message(msg)
     return 'Report submitted successfully.'
 @app.route('/admin')
 def admin(): return render_template('login.html')
